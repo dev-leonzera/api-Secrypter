@@ -3,6 +3,6 @@ const controller = require('./controller')
 //
 const routes = express.Router()
 //
-routes.get('/generator', controller.create)
+routes.post('/generator', controller.create)
 //
 module.exports = routes

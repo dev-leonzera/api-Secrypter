@@ -1,9 +1,8 @@
 const crypto = require('crypto')
 
 module.exports = {
-    create(){
-        var passwd = crypto.randomBytes(5).toString('hex')
-        //
+    create(value){
+        var passwd = crypto.randomBytes(value).toString('hex')
         return passwd
     }
 }
