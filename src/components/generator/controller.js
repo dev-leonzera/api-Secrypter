@@ -3,9 +3,9 @@ const service = require('./service')
 //
 module.exports = {
     create(req, res){
-      var { size } = req.body
-      var passwd = service.create(size)
-      res.send(passwd)
+      var { size, type } = req.body
+      var passwd = service.create(size, type)
+      res.json({password: passwd})
     }
 }
 
