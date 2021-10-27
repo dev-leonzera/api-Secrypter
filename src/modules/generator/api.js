@@ -3,9 +3,11 @@ const controller = require('./controller')
 //
 const routes = express.Router()
 //
-routes.get('/', (req, res) => {
-    res.send('Welcome to Secrypters API')
-})
-routes.post('/generator', controller.create)
+routes.post('/', controller.generatePassword)
 //
+routes.post('/reminder', controller.createReminder)
+//
+routes.get('/reminder', controller.listReminder)
+//
+routes.get('/reminder/{id}', controller.viewReminder)
 module.exports = routes
