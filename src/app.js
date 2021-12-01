@@ -9,4 +9,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/api/', routes)
 
-module.exports = app
+const run = () => {
+    app.listen(3333, () => {
+        console.log('Conectado')
+    })
+}
+
+module.exports = run

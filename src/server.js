@@ -1,5 +1,3 @@
-const app = require('./app')
+const run = require('./app')
 
-app.listen(3333, () => {
-    console.log('Conectado')
-})
+run()
