@@ -2,7 +2,7 @@ module.exports = {
     stringFactory(array, len){
         const stringArray = [];
         var found = false;
-        for(i=0;i<len;i++){
+        for(i=0;i<len-1;i++){
             found = stringArray.includes(array[i]);
             if(!found){
                 stringArray.push(array[i]);

@@ -3,7 +3,7 @@ const controller = require('./controller')
 //
 const routes = express.Router()
 //
-routes.post('/', controller.generatePassword)
+routes.get('/', controller.generatePassword)
 //
 routes.post('/reminder', controller.createReminder)
 //
